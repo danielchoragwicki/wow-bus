@@ -1,0 +1,26 @@
+.header {
+    background: $main-color;
+    padding: 30px 15px;
+}
+
+.lang {
+    display: flex;
+    border-top: 2px solid $light-border;
+    padding-top: 15px;
+    @include flex;
+    &__link {
+        font-size: 14px;
+        font-weight: 800;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+    }
+    &__image {
+        width: 20px;
+        height: auto;
+        margin-right: 8px;
+    }
+    &__text{
+        color: $white;
+    }
+}

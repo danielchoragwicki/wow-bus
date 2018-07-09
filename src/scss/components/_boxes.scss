@@ -1,0 +1,30 @@
+.boxes {
+    &__item {
+        @include flex;
+        flex-wrap: wrap;
+        text-align: center;
+        border-top: 1px solid $border;
+        border-bottom: 1px solid $border;
+        padding: 40px 0;
+        &:first-child {
+            border-top: 0;
+        }
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+    &__image {
+        width: 60px;
+        height: auto;
+        &--height {
+            height: 60px;
+            width: auto;
+        }
+    }
+    &__text {
+        margin: 20px 0 0 0;
+        width: 100%;
+        font-size: 18px;
+        font-weight: 700;
+    }
+}

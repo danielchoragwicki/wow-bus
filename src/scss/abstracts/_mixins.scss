@@ -1,4 +1,4 @@
-@mixin transition($parameter: all, $time: .3s, $ease: ease) {
+@mixin transition($parameter: all, $time: .2s, $ease: ease) {
     transition: $parameter $time $ease;
 }
 
@@ -27,17 +27,16 @@
 
 @mixin flex($center: both) {
     display: flex;
-    flex-wrap: wrap;
     @if $center == 'vertical' {
         align-items: center;
-      }
-      @else if $center == 'horizontal' {
+    }
+    @else if $center == 'horizontal' {
         justify-content: center;
-      }
-      @else if $center == 'both' {
+    }
+    @else if $center == 'both' {
         justify-content: center;
         align-items: center;
-      }
+    }
 }
 
 @mixin margin-auto {

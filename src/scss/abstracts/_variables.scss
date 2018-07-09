@@ -2,11 +2,20 @@
 $black: #000000;
 $white: #ffffff;
 
+$main-color: #00ba7f;
+
+$border: #e7eceb;
+$light-border: rgba(255, 255, 255, 0.13);
+
+$info-background: #f4f6f6;
+
+$main-text: #252e2d;
+$second-text: #859492;
+
 //RWD
 $breakpoints: (
-        'xs': (max-width: 575px),
-        'sm': (max-width: 767px),
-        'md': (max-width: 991px),
-        'lg': (max-width: 1199px),
-        'xl': (min-width: 1200px),
+        'sm': (min-width: 576px),
+        'md': (min-width: 768px),
+        'lg': (min-width: 992px),
+        'xl': (min-width: 1200px)
 );

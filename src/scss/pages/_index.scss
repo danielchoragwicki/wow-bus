@@ -1,0 +1,18 @@
+.intro {
+    min-height: 400px;
+    // background: $info-background;
+    text-align: center;
+    padding: 30px 0;
+    @include flex;
+    flex-wrap: wrap;
+    align-content: center;
+    background-image: url("../../img/intro-image-1.jpg");
+    &__title {
+        font-weight: 800;
+        font-size: 32px;
+        margin: 0;
+        width: 100%;
+        color: $white;
+        text-shadow: 1px 1px 1px lighten($black, 30);
+    }
+}
