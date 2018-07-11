@@ -5,13 +5,23 @@
         text-align: center;
         width: 100%;
         padding: 20px 0;
+        @include respond-to(md) {
+            text-align: left;
+        }
+        @include respond-to(lg) {
+            padding: 20px;
+        }
     }
     &__title {
         font-size: 25px;
         font-weight: 700;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
         &--green {
             color: $main-color;
+        }
+        @include respond-to(xl) {
+            font-size: 28px;
+            padding-right: 15px;
         }
     }
     &__desc {

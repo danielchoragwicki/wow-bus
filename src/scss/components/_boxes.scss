@@ -1,24 +1,75 @@
 .boxes {
+    @include respond-to(sm) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     &__item {
         @include flex;
-        flex-wrap: wrap;
-        text-align: center;
-        border-top: 1px solid $border;
+        width: 100%;
         border-bottom: 1px solid $border;
-        padding: 40px 0;
+        @include respond-to(md) {
+            width: 50%;
+        }
+        @include respond-to(lg) {
+            width: 33.3333%;
+            border-right: 1px solid $border;
+        }
+        &:nth-child(odd) {
+            @include respond-to(md) {
+                border-right: 1px solid $border;
+            }
+        }
+        &:nth-child(3n) {
+            @include respond-to(lg) {
+                border-right: 0;
+            }
+        }
+        &:nth-last-child(-n + 3) {
+            @include respond-to(lg) {
+                border-bottom: 0;
+            }
+        }
         &:first-child {
             border-top: 0;
         }
         &:last-child {
             border-bottom: 0;
+            @include respond-to(md) {
+                border-right: 0;
+            }
+        }
+    }
+    &__inner {
+        padding: 40px 15px;
+        width: 300px;
+        text-align: center;
+        @include flex;
+        flex-wrap: wrap;
+        @include respond-to(sm) {
+            flex-wrap: nowrap;
+            text-align: left;
+            height: 150px;
         }
     }
     &__image {
         width: 60px;
         height: auto;
+        @include flex;
+        img {
+            width: 100%; 
+            height: auto;
+        }
         &--height {
             height: 60px;
-            width: auto;
+            width: 60px;
+            img {
+                height: 100%;
+                width: auto;
+            }
+        }
+        @include respond-to(sm) {
+            flex-shrink: 0;
         }
     }
     &__text {
@@ -26,5 +77,13 @@
         width: 100%;
         font-size: 18px;
         font-weight: 700;
+        @include respond-to(sm) {
+            flex: 1;
+            margin-top: 0;
+            margin-left: 20px;
+        }
+        @include respond-to(md) {
+            width: auto;
+        }
     }
 }

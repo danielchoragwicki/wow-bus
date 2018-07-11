@@ -7,7 +7,7 @@
     <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Template HTML, SASS, GULP</title>
+    <title>Wow Bus</title>
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
@@ -152,6 +152,11 @@
         </div>
     </header>
     <section class="intro">
+        <div class="intro__images">
+            <div class="intro__image">
+                <img src="./img/intro-background.jpg" alt="">
+            </div>
+        </div>
         <div class="container">
             <h1 class="intro__title">Podróżuj razem z nami po całej Europie!</h1>
         </div>
@@ -205,55 +210,91 @@
     </section>
     <section class="boxes">
         <div class="boxes__item">
-            <img class="boxes__image" src="./img/boxes-1.png" alt="">
-            <p class="boxes__text">Potwierdzenie rezerwacji w 5 minut</p>
+            <div class="boxes__inner">
+                <div class="boxes__image">
+                    <img src="./img/boxes-1.png" alt="">
+                </div>
+                <p class="boxes__text">Potwierdzenie rezerwacji w 5 minut</p>
+            </div>
         </div>
         <div class="boxes__item">
-            <img class="boxes__image" src="./img/boxes-2.png" alt="">
-            <p class="boxes__text">Jeźdzj pomy 7 dni w tygodniu</p>
+            <div class="boxes__inner">
+                <div class="boxes__image">
+                    <img src="./img/boxes-2.png" alt="">
+                </div>
+                <p class="boxes__text">Jeźdzj pomy 7 dni w tygodniu</p>
+            </div>
         </div>
         <div class="boxes__item">
-            <img class="boxes__image" src="./img/boxes-3.png" alt="">
-            <p class="boxes__text">Bezpieczne płatności online</p>
+            <div class="boxes__inner">
+                <div class="boxes__image">
+                    <img src="./img/boxes-3.png" alt="">
+                </div>
+                <p class="boxes__text">Bezpieczne płatności online</p>
+            </div>
         </div>
         <div class="boxes__item">
-            <img class="boxes__image" src="./img/boxes-4.png" alt="">
-            <p class="boxes__text">Co 6 przejazd gratis!</p>
+            <div class="boxes__inner">
+                <div class="boxes__image">
+                    <img src="./img/boxes-4.png" alt="">
+                </div>
+                <p class="boxes__text">Co 6 przejazd gratis!</p>
+            </div>
         </div>
         <div class="boxes__item">
-            <img class="boxes__image" src="./img/boxes-5.png" alt="">
-            <p class="boxes__text">Darmowe WiFi</p>
+            <div class="boxes__inner">
+                <div class="boxes__image">
+                    <img src="./img/boxes-5.png" alt="">
+                </div>
+                <p class="boxes__text">Darmowe WiFi</p>
+            </div>
         </div>
         <div class="boxes__item">
-            <img class="boxes__image" src="./img/boxes-6.png" alt="">
-            <p class="boxes__text">Nowa i sprawdzona flota</p>
+            <div class="boxes__inner">
+                <div class="boxes__image">
+                    <img src="./img/boxes-6.png" alt="">
+                </div>
+                <p class="boxes__text">Nowa i sprawdzona flota</p>
+            </div>
         </div>
         <div class="boxes__item">
-            <img class="boxes__image" src="./img/boxes-7.png" alt="">
-            <p class="boxes__text">Darmowa woda</p>
+            <div class="boxes__inner">
+                <div class="boxes__image">
+                    <img src="./img/boxes-7.png" alt="">
+                </div>
+                <p class="boxes__text">Darmowa woda</p>
+            </div>
         </div>
         <div class="boxes__item">
-            <img class="boxes__image boxes__image--height" src="./img/boxes-8.png" alt="">
-            <p class="boxes__text">Przypomnienia SMS</p>
+            <div class="boxes__inner">
+                <div class="boxes__image boxes__image--height">
+                    <img src="./img/boxes-8.png" alt="">
+                </div>
+                <p class="boxes__text">Przypomnienia SMS</p>
+            </div>
         </div>
         <div class="boxes__item">
-            <img class="boxes__image" src="./img/boxes-9.png" alt="">
-            <p class="boxes__text">Gwarancja zadowolenia</p>
+            <div class="boxes__inner">
+                <div class="boxes__image">
+                    <img src="./img/boxes-9.png" alt="">
+                </div>
+                <p class="boxes__text">Gwarancja zadowolenia</p>
+            </div>
         </div>
     </section>
     <section class="info">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 col-md-6">
                     <div class="info__item">
-                        <h2 class="info__title"><span class="info__title info__title--green">Odkrywaj Europę</span> korzystając z naszych tanich biletów autobusowych</h2>
+                        <h2 class="info__title"><span class="info__title--green">Odkrywaj Europę</span> korzystając z naszych tanich biletów autobusowych</h2>
                         <p class="info__desc">Lorem ipsum dolor sit amet consectetur elit nesciunt ipsum, voluptatum.</p>
                         <p class="info__desc">Numquam aliquid odio recusandae ipsa quibusdam incidunt vel consequuntur voluptas sit autem natus dolorem vitae itaque nesciunt ipsum, voluptatum fuga ex ut.</p>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 col-md-6">
                     <div class="info__item">
-                        <h2 class="info__title"><span class="info__title info__title--green">Wyjazdy weekendowe</span> korzystając z naszych tanich biletów autobusowych</h2>
+                        <h2 class="info__title"><span class="info__title--green">Wyjazdy weekendowe</span> korzystając z naszych tanich biletów autobusowych</h2>
                         <p class="info__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <p class="info__desc">Numquam aliquid odio recusandae ipsa quibusdam incidunt vel consequuntur voluptas sit autem natus dolorem vitae itaque nesciunt ipsum, voluptatum fuga ex ut.</p>
                     </div>
