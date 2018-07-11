@@ -1,11 +1,17 @@
 .menu {
     padding: 0 15px;
     margin: 0;
+    &__collapse {
+        justify-content: flex-end;
+    }
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        @include respond-to(lg) {
+            width: auto;
+        }
     }
     &__button {
         background: none;
@@ -22,9 +28,16 @@
         padding: 0;
         margin: 20px 0;
         text-align: center;
+        @include respond-to(lg) {
+            display: flex;
+            margin: 0 20px 0 0;
+        }
     }
     &__item {
-        padding: 10px 0;
+        padding: 10px;
+        @include respond-to(xl) {
+            padding: 0 15px;
+        }
     }
     &__link {
         font-size: 18px;

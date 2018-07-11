@@ -51,6 +51,9 @@
             text-align: left;
             height: 150px;
         }
+        @include respond-to(xl) {
+            height: 180px;
+        }
     }
     &__image {
         width: 60px;
