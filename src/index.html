@@ -27,6 +27,7 @@
     <!-- build:css -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/fontawesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
     <link href="css/style.css" rel="stylesheet">
     <!-- endbuild -->
 </head>
@@ -157,50 +158,45 @@
                 <img src="./img/intro-background.jpg" alt="">
             </div>
         </div>
-        <div class="container">
-            <h1 class="intro__title">Podróżuj razem z nami po całej Europie!</h1>
+        <div class="intro__title-wrapper">
+            <div class="container">
+                <h1 class="intro__title">Podróżuj razem z nami <span class="intro__title--nextline">po całej Europie!</span></h1>
+            </div>
         </div>
         <div class="container-fluid">
             <div class="search">
-                <form>
+                <form class="search__form">
                     <div class="search__inner">
                         <div class="search__box">
-                            <span class="search__title">Z:</span>
-                            <input type="text" class="search__input" placeholder="Wrocław" list="cities">
-                            <datalist id="cities">
-                              <option value="Internet Explorer">
-                              <option value="Firefox">
-                              <option value="Chrome">
-                              <option value="Opera">
-                              <option value="Safari">
-                            </datalist>
+                            <label for="from-city" class="search__title">Z:</label>
+                            <input id="from-city" class="search__input" placeholder="Wrocław" list="cities">
                         </div>
                         <div class="search__box">
-                            <span class="search__title">Do:</span>
-                            <input type="text" class="search__input" placeholder="Warszawa" list="cities2">
-                            <datalist id="cities2">
-                              <option value="Internet Explorer">
-                              <option value="Firefox">
-                              <option value="Chrome">
-                              <option value="Opera">
-                              <option value="Safari">
-                            </datalist>
+                            <label for="dest-city" class="search__title">Do:</label>
+                            <input id="dest-city" class="search__input" placeholder="Warszawa" list="cities2">
                         </div>
                         <div class="search__box">
                             <span class="search__title">Odjazd:</span>
-                            <input class="search__input" type="date">
+                            <div class="search__input-wrapper">
+                                <input class="datepicker search__input" type="text">
+                            </div>
+                        </div>
+                        <div class="search__box return-button">
+                            <button type="button" class="search__add-button"><img src="./img/search-add.png" alt="">Dodaj powrót</button>
+                        </div>
+                        <div class="search__box return hide">
+                            <span class="search__title">Powrót:</span>
+                            <div class="search__input-wrapper">
+                                <input class="datepicker search__input" type="text">
+                            </div>
                         </div>
                         <div class="search__box">
-                            <button class="search__add-button"><img src="./img/search-add.png" alt=""> Dodaj powrót</button>
-                        </div>
-                        <div class="search__box">
-                            <span class="search__title">Ilość osób:</span>
-                            <select class="search__input search__input--persons">
-                                <option class="search__option" value="1">1</option>
-                                <option class="search__option" value="2">2</option>
-                                <option class="search__option" value="3">3</option>
-                                <option class="search__option" value="4">4</option>
-                            </select>
+                            <label for="persons-count" class="search__title">Ilość osób:</label>
+                            <div class="search__input-wrapper search__input-wrapper--persons">
+                                <input type="text" id="persons-count" readonly class="search__input search__input--persons">
+                                <button type="button" class="search__persons-button"><img src="./img/search-persons.png" alt=""></button>
+                            </div>
+                            <div id="persons-count-slider" class="search__slider hide"></div>
                         </div>
                     </div>
                     <button class="search__button"><img src="./img//search-loupe.png" alt="">Szukaj połączenia</button>
@@ -441,6 +437,7 @@
     <!-- build:js -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     <script src="js/scripts.js"></script>
     <!-- endbuild  -->
 </body>

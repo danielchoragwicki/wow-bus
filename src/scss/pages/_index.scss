@@ -1,11 +1,22 @@
 .intro {
     position: relative;
-    min-height: 400px;
-    text-align: center;
     padding: 30px 0;
     @include flex;
-    flex-wrap: wrap;
-    align-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    @include respond-to(lg) {
+        min-height: 500px;
+    }
+    @include respond-to(xl) {
+        min-height: 650px;
+    }
+    &__title-wrapper {
+        @include respond-to(lg) {
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+    }
     &__images {
         z-index: -1;
         display: flex;
@@ -39,9 +50,25 @@
     &__title {
         font-weight: 800;
         font-size: 32px;
-        margin: 0;
-        width: 100%;
+        margin: 30px 0 45px 0;
         color: $white;
         text-shadow: 1px 1px 1px lighten($black, 30);
+        text-align: center;
+        @include respond-to(md) {
+            font-size: 42px;
+            margin: 40px 0 55px 0;
+        }
+        @include respond-to(xl) {
+            font-size: 52px;
+            text-align: left;
+            margin: 0;
+        }
+        @include respond-to(xl) {
+            font-size: 72px;
+        }
+        &--nextline {
+            display: inline-block;
+            width: 100%;
+        }
     }
 }
