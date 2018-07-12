@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: space-between;
     @include respond-to(lg) {
-        height: 500px;
+        min-height: 500px;
     }
     @include respond-to(xl) {
         height: 650px;

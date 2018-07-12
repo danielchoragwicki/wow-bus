@@ -27,7 +27,7 @@ $(document).ready(function () {
     $(function() {
         $(".datepicker").datepicker({
             showOn: "button",
-            buttonImage: "../img/search-calendar.png",
+            buttonImage: "img/search-calendar.png",
             buttonImageOnly: true,
             buttonText: "Wybierz datę"
         });

@@ -38,6 +38,29 @@
             padding: 0 15px;
             flex: 1;
         }
+        &--from-city {
+            @include respond-to(xl) {
+                padding-right: 30px;
+            }
+            &::after {
+                position: absolute;
+                top: 52%;
+                right: -12px;
+                content: '';
+                background: no-repeat center url('../../img/search-arrows.png');
+                width: 25px;
+                height: 25px;
+                display: none;
+                @include respond-to(xl) {
+                    display: block;
+                }
+            }
+        }
+        &--dest-city {
+            @include respond-to(xl) {
+                padding-left: 30px;
+            }
+        }
     }
     &__title {
         font-weight: 600;
@@ -57,8 +80,6 @@
     }
     &__input-wrapper {
         position: relative;
-        // display: flex;
-        // align-items: center;
         width: 100%;
         &--persons {
             width: auto;
