@@ -5,10 +5,10 @@
     flex-direction: column;
     justify-content: space-between;
     @include respond-to(lg) {
-        min-height: 500px;
+        height: 500px;
     }
     @include respond-to(xl) {
-        min-height: 650px;
+        height: 650px;
     }
     &__title-wrapper {
         @include respond-to(lg) {
