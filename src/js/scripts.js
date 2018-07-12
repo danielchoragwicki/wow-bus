@@ -55,4 +55,9 @@ $(document).ready(function () {
         $(".search__slider").toggleClass('hide');
     })
 
+    // ANIMATIONS
+
+    window.sr = ScrollReveal();
+    sr.reveal('.anim');
+
 });
