@@ -43,6 +43,11 @@
         font-size: 18px;
         font-weight: 800;
         color: $white;
+        @include transition;
+        @include events {
+            text-decoration: none;
+            color: $hover-color;
+        }
         @include respond-to(lg) {
             font-size: 16px;
         }

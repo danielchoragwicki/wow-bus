@@ -18,6 +18,12 @@
         padding: 0 15px;
         display: flex;
         align-items: center;
+        color: $white;
+        @include transition;
+        @include events {
+            text-decoration: none;
+            color: $hover-color;
+        }
         @include respond-to(lg) {
             padding: 0 10px;   
         }
@@ -26,8 +32,5 @@
         width: 20px;
         height: auto;
         margin-right: 8px;
-    }
-    &__text{
-        color: $white;
     }
 }

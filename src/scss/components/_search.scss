@@ -99,6 +99,11 @@
         align-items: center;
         padding: 25px 0;
         cursor: pointer;
+        @include transition;
+        @include events {
+            text-decoration: none;
+            background: $hover-color;
+        }
         @include respond-to(xl) {
             width: 250px;
         }

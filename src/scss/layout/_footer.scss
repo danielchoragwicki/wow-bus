@@ -30,6 +30,10 @@
         color: $second-text;
         padding: 2px 0;
         font-family: 'Barlow Semi Condensed', sans-serif;
+        @include transition;
+        @include events {
+            color: $hover-color;
+        }
     }
 }
 
@@ -54,6 +58,12 @@
         height: 30px;
         color: $white;
         margin-right: 5px;
+        @include transition;
+        @include events {
+            text-decoration: none;
+            background: $hover-color;
+            color: $white;
+        }
         &--fb {
             background: #3a5897;
         }

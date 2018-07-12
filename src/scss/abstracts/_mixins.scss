@@ -3,6 +3,7 @@
 }
 
 @mixin events {
+    outline: 0;
     &:hover, &:focus, &:active {
         @content
     }
