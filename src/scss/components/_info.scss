@@ -1,6 +1,9 @@
 .info {
     background: $info-background;
     padding: 40px 0;
+    @include respond-to(lg) {
+        padding: 60px 0;
+    }
     &__item {
         text-align: center;
         width: 100%;
@@ -10,6 +13,12 @@
         }
         @include respond-to(lg) {
             padding: 20px;
+        }
+        &--left {
+            padding-left: 0;
+        }
+        &--right {
+            padding-right: 0;
         }
     }
     &__title {

@@ -12,6 +12,11 @@
     }
     &--footer {
         margin-top: 30px;
+        text-align: center;
+        @include respond-to(lg) {
+            text-align: left;
+            margin-top: 5px;
+        }
         .logo__letter {
             fill: $main-text;
         }
